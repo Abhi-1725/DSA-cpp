@@ -11,7 +11,7 @@ you can assume there will be at most one pair of integers summing up to the targ
 array = [3, 5, -4 , 8, 11, 1, -1,  6]
 targetSum  =  10
 */
-
+//Solution-1
 #include <vector>
 using namespace std;
 
@@ -28,6 +28,54 @@ vector<int> twoNumberSum(vector<int> array, int targetSum) {
 			{
 				return vector<int>{num1, num2};
 			}
+		}
+	}
+  return {};
+}
+
+//Solution-2
+
+// O(n) time | O(n) space
+vector<int> twoNumberSum(vector<int> array, int targetSum) {
+  // Write your code here.
+	unordered_set<int> nums;
+	for (int num : array)
+	{
+		int potential_Match = targetSum - num;
+		if (nums.find(potential_Match) != nums.end())
+		{
+			return vector<int>{potential_Match, num};
+		}
+		else
+		{
+			nums.insert(num);
+		}
+	}
+  return {};
+}
+
+//Solution-3
+
+// O(nlog(n)) | O(1) space
+vector<int> twoNumberSum(vector<int> array, int targetSum) {
+  // Write your code here.
+	sort(array.begin(), array.end());
+	int left = 0;
+	int right = array.size() - 1;
+	while (left < right)
+	{
+		int currentSum = array[left] + array[right];
+		if (currentSum == targetSum)
+		{
+			return {array[left], array[right]};
+		}
+		else if (currentSum < targetSum)
+		{
+			left++;
+		}
+		else if (currentSum > targetSum)
+		{
+			right--;
 		}
 	}
   return {};
