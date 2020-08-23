@@ -7,8 +7,9 @@ Sample :
 array = [5, 1, 22, 25, 6, -1, 8, 10]
 sequence = [1, 6, -1, 10]
 */
-
-//Solution1
+//solution 1
+#include <iostream>
+#include <vector>
 using namespace std;
 
 // O(n) time | O(1) space - where n is the length of the array 
