@@ -13,6 +13,8 @@
 using namespace std;
 
 bool is_Out_Of_Order(int i, int num, vector<int> array);
+
+// O(n) time | O(1) space
 vector<int> subarraySort(vector<int> array) {
   int min_Out_Of_Order = INT_MAX;
 	int max_Out_Of_Order = INT_MIN;
