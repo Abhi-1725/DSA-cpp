@@ -32,8 +32,6 @@ public:
 
   BST &insert(int val) 
 	{
-    // Write your code here.
-    // Do not edit the return statement of this method.
 		if(val < value)
 		{
 			if(left == NULL)
@@ -93,7 +91,6 @@ public:
 
   BST &remove(int val, BST *parent = NULL) 
 	{
-    // Do not edit the return statement of this method.
 		if(val < value)
 		{
 			if(left != NULL)
