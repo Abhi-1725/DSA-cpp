@@ -11,8 +11,9 @@ you can assume there will be at most one pair of integers summing up to the targ
 array = [3, 5, -4 , 8, 11, 1, -1,  6]
 targetSum  =  10
 */
-//Solution-1
+#include<iostream>
 #include <vector>
+
 using namespace std;
 
 // O(n^2) time 1 | O(1) space
