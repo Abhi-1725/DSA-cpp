@@ -10,7 +10,7 @@
 	 Conceptual Overview section of this question's video explanation before 
 	 starting to code.
 */
-
+#include <iostream>
 #include <vector>
 
 using namespace std;
