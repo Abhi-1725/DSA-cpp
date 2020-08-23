@@ -10,6 +10,7 @@ output:
 [[-8, 2, 6], [-8, 3, 5], [-6, 1, 5]]
 */
 
+#include<iostream>
 #include <vector>
 using namespace std;
 
