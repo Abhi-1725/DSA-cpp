@@ -3,7 +3,7 @@
 	 
 	 If a sum can't be generated , the function should return 0.
 */
-
+#include <iostream>
 #include <vector>
 
 using namespace std;
